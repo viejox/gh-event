@@ -14,8 +14,10 @@ on:
       - main
       - 'dev*'
       - 'feat/**'
-    paths-ignore:
+    paths:
       - '.github/workflows/*'
+    #paths-ignore:  si hubo cambio en este path no ejecuta
+    #  - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
